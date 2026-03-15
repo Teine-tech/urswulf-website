@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Launch Documentation Suite — Urs Consulting</title>
+    <meta name="description" content="Example: Building a complete help article suite for a SaaS product feature launch — from planning and cross-functional collaboration to AI-ready content structuring.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Urs Consulting</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="example-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / Product Launch Docs
+            </div>
+            <h1>Documentation Suite for a New Product Feature</h1>
+            <p class="example-description">Creating a complete set of help articles for a SaaS feature launch — from cross-functional planning and content architecture through writing, review, and AI-ready structuring.</p>
+            <div class="example-tags">
+                <span class="tag">Article Writing</span>
+                <span class="tag">AI-Ready Content</span>
+                <span class="tag">Launch Planning</span>
+                <span class="tag">Cross-Functional</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Content -->
+    <section class="example-body">
+        <div class="container">
+
+            <!-- Context -->
+            <div class="example-section">
+                <h2>The Challenge</h2>
+                <p>A SaaS platform is launching Automations — a major new feature that lets users build custom workflows with triggers, conditions, and actions. There's no existing documentation. The content team needs to go from zero to a complete, published article suite before launch day, coordinating across Product, Engineering, and Support teams under a tight timeline. The help center also runs an AI agent, so every article needs to be structured for accurate AI retrieval from day one.</p>
+            </div>
+
+            <!-- Deliverable 1: Content Plan / Status Tracker -->
+            <div class="example-section">
+                <h2>Deliverable: Launch Content Plan &amp; Status Tracker</h2>
+                <p>Before writing a single word, I map out every article needed for the launch — organized by topic, assigned a priority, and tracked through production. This gives all stakeholders a clear view of progress and prevents gaps from slipping through.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>automations-launch-content-tracker.csv</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Article</th>
+                                    <th>Category</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Audience</th>
+                                    <th>Reviewer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>What Are Automations?</td>
+                                    <td>Getting Started</td>
+                                    <td>🔴 P0</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                    <td>Product</td>
+                                </tr>
+                                <tr>
+                                    <td>Creating Your First Automation</td>
+                                    <td>Getting Started</td>
+                                    <td>🔴 P0</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                    <td>Product</td>
+                                </tr>
+                                <tr>
+                                    <td>Automations Pricing &amp; Plan Limits</td>
+                                    <td>Getting Started</td>
+                                    <td>🔴 P0</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>All Users</td>
+                                    <td>Product + Legal</td>
+                                </tr>
+                                <tr>
+                                    <td>Available Triggers and Actions</td>
+                                    <td>Configuration</td>
+                                    <td>🔴 P0</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>Using Conditions and Filters</td>
+                                    <td>Configuration</td>
+                                    <td>🟡 P1</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                    <td>Product</td>
+                                </tr>
+                                <tr>
+                                    <td>Connecting Third-Party Apps</td>
+                                    <td>Integrations</td>
+                                    <td>🟡 P1</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>All Users</td>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>Testing and Debugging Automations</td>
+                                    <td>Configuration</td>
+                                    <td>🟡 P1</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>All Users</td>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>Managing Team Permissions for Automations</td>
+                                    <td>Admin</td>
+                                    <td>🟡 P1</td>
+                                    <td><span class="status status-in-progress">In Progress</span></td>
+                                    <td>Admins</td>
+                                    <td>Product</td>
+                                </tr>
+                                <tr>
+                                    <td>Automation Run History &amp; Logs</td>
+                                    <td>Configuration</td>
+                                    <td>🟢 P2</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>All Users</td>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>Automations API Reference</td>
+                                    <td>Developer Docs</td>
+                                    <td>🟢 P2</td>
+                                    <td><span class="status status-in-progress">In Progress</span></td>
+                                    <td>Developers</td>
+                                    <td>Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td>Common Automation Errors</td>
+                                    <td>Troubleshooting</td>
+                                    <td>🟡 P1</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>All Users</td>
+                                    <td>Support + Eng</td>
+                                </tr>
+                                <tr>
+                                    <td>Automation Rate Limits &amp; Quotas</td>
+                                    <td>Troubleshooting</td>
+                                    <td>🟢 P2</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>All Users</td>
+                                    <td>Engineering</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverable 2: Sample Article -->
+            <div class="example-section">
+                <h2>Deliverable: Sample Help Article</h2>
+                <p>Here's an example of how I write help center articles — clear headings, scannable structure, specific details, and a tone that respects the reader's time. This article is structured to be AI-ready: each section answers a distinct question so AI agents can surface precise answers.</p>
+
+                <div class="mock-article">
+                    <span class="mock-article-badge">Help Center Article</span>
+                    <h3>Creating Your First Automation</h3>
+                    <p class="article-meta">Last updated: March 2026 · Audience: All Users</p>
+
+                    <p>Automations let you connect triggers, conditions, and actions to automate repetitive tasks in your workspace. This guide walks you through building your first automation from scratch.</p>
+
+                    <h4>Before You Start</h4>
+                    <p>To create automations, you need:</p>
+                    <ul>
+                        <li>A Pro plan or higher (automations are not available on Free plans)</li>
+                        <li>Editor or Admin permissions in your workspace</li>
+                        <li>At least one active project or data source connected</li>
+                    </ul>
+
+                    <h4>Step 1: Open the Automation Builder</h4>
+                    <p>Navigate to <strong>Settings → Automations</strong> from your workspace sidebar. Click <strong>New Automation</strong> to open the builder.</p>
+
+                    <h4>Step 2: Choose a Trigger</h4>
+                    <p>A trigger is the event that starts your automation. Select one from the trigger menu:</p>
+                    <ul>
+                        <li><strong>Record created</strong> — Runs when a new record is added to a project</li>
+                        <li><strong>Field updated</strong> — Runs when a specific field value changes</li>
+                        <li><strong>Status changed</strong> — Runs when a record moves to a new status</li>
+                        <li><strong>Scheduled</strong> — Runs at a set time (daily, weekly, or custom)</li>
+                    </ul>
+
+                    <h4>Step 3: Add Conditions (Optional)</h4>
+                    <p>Conditions filter which records the automation applies to. For example, you can set the automation to run only when the "Priority" field equals "High." Click <strong>Add Condition</strong> to set up filters.</p>
+
+                    <div class="callout">
+                        <strong>Tip:</strong> Start simple. Build your first automation with just a trigger and one action. You can add conditions and additional steps later once you've confirmed it works.
+                    </div>
+
+                    <h4>Step 4: Define an Action</h4>
+                    <p>An action is what happens when the automation runs. Common actions include:</p>
+                    <ol>
+                        <li><strong>Send a notification</strong> — Email or in-app alert to a user or channel</li>
+                        <li><strong>Update a field</strong> — Automatically change a value on the record</li>
+                        <li><strong>Create a task</strong> — Generate a follow-up task in a specified project</li>
+                        <li><strong>Send a webhook</strong> — Push data to an external service via HTTP</li>
+                    </ol>
+
+                    <h4>Step 5: Name and Activate</h4>
+                    <p>Give your automation a descriptive name (e.g., "Notify team when high-priority task is created"). Toggle the automation to <strong>Active</strong>. The automation will begin running the next time the trigger fires.</p>
+
+                    <h4>What Happens Next</h4>
+                    <p>Once active, your automation runs in the background. You can view run history, check for errors, and adjust settings at any time from the <strong>Automations</strong> dashboard.</p>
+                </div>
+            </div>
+
+            <!-- Deliverable 3: AI-Ready Content Structure -->
+            <div class="example-section">
+                <h2>Deliverable: AI-Ready Content Structure</h2>
+                <p>Modern help centers are increasingly powered by AI agents (like Intercom's Fin or Zendesk AI). These tools work best when articles follow specific structural patterns. Here's how I structure content so AI can surface accurate, relevant answers — not hallucinate them.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>ai-content-guidelines.md</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Principle</th>
+                                    <th>What It Means</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>One topic per article</strong></td>
+                                    <td>Each article answers one clear question or covers one workflow</td>
+                                    <td>"Creating Your First Automation" is separate from "Automation Pricing"</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Descriptive headings</strong></td>
+                                    <td>H2/H3 headings state the answer topic, not just labels</td>
+                                    <td>"Step 2: Choose a Trigger" not "Triggers"</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Front-load key facts</strong></td>
+                                    <td>Put the most important information in the first sentence of each section</td>
+                                    <td>"A trigger is the event that starts your automation" before listing trigger types</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Structured data patterns</strong></td>
+                                    <td>Use lists, tables, and consistent formatting that AI can parse</td>
+                                    <td>Trigger types in a list with bold labels, not buried in a paragraph</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>No ambiguous pronouns</strong></td>
+                                    <td>Repeat the noun instead of using "it," "this," "that"</td>
+                                    <td>"The automation runs when…" not "It runs when…"</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Audience-appropriate language</strong></td>
+                                    <td>Match vocabulary to the reader's expertise level</td>
+                                    <td>End-user articles say "connect your app"; developer docs say "configure the OAuth flow"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverable 4: Cross-Functional Workflow -->
+            <div class="example-section">
+                <h2>Deliverable: Cross-Functional Collaboration Workflow</h2>
+                <p>Product launch documentation doesn't happen in isolation. Here's the workflow I use to coordinate with Product, Engineering, and Support teams — especially under tight timelines.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>launch-docs-workflow.md</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Activities</th>
+                                    <th>Teams Involved</th>
+                                    <th>Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Discovery</strong></td>
+                                    <td>Review PRDs and specs, attend feature demos, interview PMs and engineers on edge cases</td>
+                                    <td>Content + Product + Eng</td>
+                                    <td>Article list, content plan, audience mapping</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Drafting</strong></td>
+                                    <td>Write first drafts, capture screenshots from staging, create step-by-step flows</td>
+                                    <td>Content (lead)</td>
+                                    <td>Draft articles in CMS</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Review</strong></td>
+                                    <td>Route drafts to PMs for accuracy, Engineering for technical correctness, Support for common questions</td>
+                                    <td>Content + Product + Eng + Support</td>
+                                    <td>Reviewed and approved articles</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. Polish</strong></td>
+                                    <td>Final edit pass, add media, set audience visibility, optimize structure for AI agents</td>
+                                    <td>Content (lead)</td>
+                                    <td>Publish-ready articles</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5. Launch</strong></td>
+                                    <td>Publish articles, add to help center collections, enable for AI agent, notify Support team</td>
+                                    <td>Content + Support</td>
+                                    <td>Live documentation suite</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>6. Post-Launch</strong></td>
+                                    <td>Monitor search queries, track ticket deflection, iterate on gaps from real user behavior</td>
+                                    <td>Content + Support + Data</td>
+                                    <td>Updated articles, gap analysis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach -->
+            <div class="example-section">
+                <h2>Approach</h2>
+                <p>Launching documentation alongside a product feature requires speed without sacrificing quality. Here's what drives the process:</p>
+                <ul class="checklist">
+                    <li class="checked"><strong>Start before the feature is final</strong> — Begin drafting from PRDs and early demos; iterate as the product evolves</li>
+                    <li class="checked"><strong>Prioritize ruthlessly</strong> — P0 articles ("What is it?" + "How do I start?") ship before launch; P2 articles follow</li>
+                    <li class="checked"><strong>Structure for AI from day one</strong> — Every article follows AI-ready patterns so it works with AI agents on launch day</li>
+                    <li class="checked"><strong>Build the tracker first</strong> — The content plan is the project management tool; stakeholders always know where things stand</li>
+                    <li class="checked"><strong>One review cycle, not three</strong> — Combine PM + Engineering + Support review into a single structured pass to save time</li>
+                    <li class="checked"><strong>Plan for post-launch</strong> — Gaps will emerge from real usage; the content plan has room for iteration based on support data</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="example-cta">
+        <div class="container">
+            <h2>Launching a New Feature?</h2>
+            <p>I can build your documentation suite from scratch — on time, on strategy, and AI-ready from day one.</p>
+            <a href="../index.html#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Urs Consulting</span>
+                    <p>Help centers that scale. Content that works.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#work">Work</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urs Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

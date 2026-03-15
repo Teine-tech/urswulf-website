@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Architecture for Large-Scale Help Centers — Urs Consulting</title>
+    <meta name="description" content="Example: How to structure and manage a content taxonomy, audience segmentation, and planning framework for a help center serving millions of users.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Urs Consulting</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="example-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / Content Architecture
+            </div>
+            <h1>Structuring a Help Center for 10M+ Users</h1>
+            <p class="example-description">Building and managing a content taxonomy, audience segmentation framework, and content planning system for a help center serving millions of users across multiple audience types.</p>
+            <div class="example-tags">
+                <span class="tag">Taxonomy Design</span>
+                <span class="tag">Audience Segmentation</span>
+                <span class="tag">Content Planning</span>
+                <span class="tag">Scale</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Content -->
+    <section class="example-body">
+        <div class="container">
+
+            <!-- Context -->
+            <div class="example-section">
+                <h2>The Challenge</h2>
+                <p>A global technology platform serves millions of users across distinct audience segments — end users, account owners, and administrators — each with different workflows, permissions, and support needs. The help center needs to organize hundreds of articles into a clear structure that lets every audience find answers fast, while giving the content team a system to plan, track, and scale content operations.</p>
+            </div>
+
+            <!-- Deliverable 1: Taxonomy Table -->
+            <div class="example-section">
+                <h2>Deliverable: Content Taxonomy &amp; Article Matrix</h2>
+                <p>A structured taxonomy that organizes every article by category, maps it to an audience, and tracks its production status. This becomes the single source of truth for what exists, what's in progress, and what's missing.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>help-center-content-matrix.csv</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Article Title</th>
+                                    <th>Status</th>
+                                    <th>Audience</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">GETTING STARTED</td></tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Platform Overview</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Service Availability</td>
+                                    <td><span class="status status-in-progress">Media Needed</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Pricing and Billing Basics</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Enrollment and Service Agreements</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Eligibility Requirements</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Getting Started</td>
+                                    <td>Premium Plan Overview</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">USER WORKFLOWS</td></tr>
+                                <tr>
+                                    <td>User Workflows</td>
+                                    <td>Listing Setup</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>User Workflows</td>
+                                    <td>Marketing and Lead Management</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>User Workflows</td>
+                                    <td>Scheduling Appointments</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>User Workflows</td>
+                                    <td>Application Review and Screening</td>
+                                    <td><span class="status status-in-progress">Media Needed</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>User Workflows</td>
+                                    <td>Signing Agreements</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">SERVICE MANAGEMENT</td></tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Maintenance Coordination</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Payment Setup and Collection</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Renewals and Turnovers</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Reports</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Payment Processing Timelines</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Service Management</td>
+                                    <td>Automated Customer Check-ins</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">USER EXPERIENCE</td></tr>
+                                <tr>
+                                    <td>User Experience</td>
+                                    <td>Submitting Applications</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>End Users</td>
+                                </tr>
+                                <tr>
+                                    <td>User Experience</td>
+                                    <td>Accessing Services</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>End Users</td>
+                                </tr>
+                                <tr>
+                                    <td>User Experience</td>
+                                    <td>Submitting Payments and Deposits</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>End Users</td>
+                                </tr>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">ACCOUNT &amp; BILLING</td></tr>
+                                <tr>
+                                    <td>Account &amp; Billing</td>
+                                    <td>Understanding Charges</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Account &amp; Billing</td>
+                                    <td>Add or Remove Payment Method</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr>
+                                    <td>Account &amp; Billing</td>
+                                    <td>Cancel or Modify Service</td>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>Account Owners</td>
+                                </tr>
+                                <tr><td colspan="4" style="background: var(--color-navy); color: white; font-weight: 600; font-size: 0.82rem;">TROUBLESHOOTING &amp; FAQs</td></tr>
+                                <tr>
+                                    <td>Troubleshooting</td>
+                                    <td>Access Issues</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Troubleshooting</td>
+                                    <td>Application Errors</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Troubleshooting</td>
+                                    <td>Payment Processing Issues</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Troubleshooting</td>
+                                    <td>Failed Payouts and Reversals</td>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                                <tr>
+                                    <td>Troubleshooting</td>
+                                    <td>Resolving Payment Failures</td>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>All Users</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverable 2: Audience Segmentation -->
+            <div class="example-section">
+                <h2>Deliverable: Audience Segmentation Matrix</h2>
+                <p>When a help center serves multiple user types, not everyone should see the same articles. This matrix defines who sees what and why — ensuring each audience gets relevant, targeted content without noise.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>audience-segmentation-matrix.csv</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Audience Segment</th>
+                                    <th>Description</th>
+                                    <th>Content Scope</th>
+                                    <th>Article Count</th>
+                                    <th>Access Level</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>All Users</strong></td>
+                                    <td>Anyone visiting the help center — logged in or not</td>
+                                    <td>Getting Started, Troubleshooting, FAQs, platform-wide policies</td>
+                                    <td>11</td>
+                                    <td>Public</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>End Users</strong></td>
+                                    <td>Customers who interact with the platform but don't manage accounts</td>
+                                    <td>Submitting applications, accessing services, making payments</td>
+                                    <td>3</td>
+                                    <td>Public</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Account Owners</strong></td>
+                                    <td>Users who manage accounts, set up services, handle billing</td>
+                                    <td>Workflows, service management, billing, advanced configuration</td>
+                                    <td>17</td>
+                                    <td>Logged In</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverable 3: Category Structure -->
+            <div class="example-section">
+                <h2>Deliverable: Category Architecture</h2>
+                <p>A clear visual taxonomy showing how the help center is organized. This structure ensures users can navigate intuitively and new content always has a logical home.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>help-center-taxonomy.md</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <div class="category-tree">
+                            <ul>
+                                <li>
+                                    <span class="tree-label">Getting Started</span><span class="tree-count">6 articles</span>
+                                    <ul>
+                                        <li>Platform Overview</li>
+                                        <li>Service Availability</li>
+                                        <li>Pricing and Billing Basics</li>
+                                        <li>Enrollment and Service Agreements</li>
+                                        <li>Eligibility Requirements</li>
+                                        <li>Premium Plan Overview</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree-label">User Workflows</span><span class="tree-count">5 articles</span>
+                                    <ul>
+                                        <li>Listing Setup</li>
+                                        <li>Marketing and Lead Management</li>
+                                        <li>Scheduling Appointments</li>
+                                        <li>Application Review and Screening</li>
+                                        <li>Signing Agreements</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree-label">Service Management</span><span class="tree-count">8 articles</span>
+                                    <ul>
+                                        <li>Maintenance Coordination</li>
+                                        <li>Payment Setup and Collection</li>
+                                        <li>Renewals and Turnovers</li>
+                                        <li>Reports</li>
+                                        <li>Payment Processing Timelines</li>
+                                        <li>Recording Payments</li>
+                                        <li>Automated Customer Check-ins</li>
+                                        <li>System Price Adjustment Recommendations</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree-label">User Experience</span><span class="tree-count">3 articles</span>
+                                    <ul>
+                                        <li>Submitting Applications</li>
+                                        <li>Accessing Services</li>
+                                        <li>Submitting Payments and Deposits</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree-label">Account &amp; Billing</span><span class="tree-count">3 articles</span>
+                                    <ul>
+                                        <li>Understanding Charges</li>
+                                        <li>Add or Remove Payment Method</li>
+                                        <li>Cancel or Modify Service</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="tree-label">Troubleshooting &amp; FAQs</span><span class="tree-count">5 articles</span>
+                                    <ul>
+                                        <li>Access Issues</li>
+                                        <li>Application Errors</li>
+                                        <li>Payment Processing Issues</li>
+                                        <li>Failed Payouts and Reversals</li>
+                                        <li>Resolving Payment Failures</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deliverable 4: Content Planning Framework -->
+            <div class="example-section">
+                <h2>Deliverable: Content Planning &amp; Status Framework</h2>
+                <p>A production tracking system that gives the team visibility into what's published, what's in review, what's blocked, and what's next. This framework scales as the help center grows from 30 to 300+ articles.</p>
+
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>content-workflow-statuses.md</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Definition</th>
+                                    <th>Next Step</th>
+                                    <th>Owner</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="status status-published">Published</span></td>
+                                    <td>Article is live and visible to the target audience</td>
+                                    <td>Monitor analytics; schedule periodic review</td>
+                                    <td>Content Strategist</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-review">Review Ready</span></td>
+                                    <td>Content is written and awaiting stakeholder review</td>
+                                    <td>Route to SME or Product for sign-off</td>
+                                    <td>Reviewer / SME</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-draft">Content Drafted</span></td>
+                                    <td>First draft written; needs internal review before stakeholder review</td>
+                                    <td>Self-edit, then move to Review Ready</td>
+                                    <td>Content Strategist</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-in-progress">Media Needed</span></td>
+                                    <td>Article content is done but requires screenshots, GIFs, or video</td>
+                                    <td>Capture or request media assets</td>
+                                    <td>Content Strategist / Design</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-missing">Not Started</span></td>
+                                    <td>Article is planned but writing hasn't begun</td>
+                                    <td>Gather requirements and begin draft</td>
+                                    <td>Content Strategist</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--color-navy); margin-bottom: 16px;">At a Glance: Content Status Summary</h3>
+                    <div class="scorecard">
+                        <div class="score-item">
+                            <div class="score-value score-high">19</div>
+                            <div class="score-label">Published</div>
+                        </div>
+                        <div class="score-item">
+                            <div class="score-value score-mid">4</div>
+                            <div class="score-label">Review Ready</div>
+                        </div>
+                        <div class="score-item">
+                            <div class="score-value" style="color: var(--color-gray-500);">3</div>
+                            <div class="score-label">Content Drafted</div>
+                        </div>
+                        <div class="score-item">
+                            <div class="score-value score-mid">2</div>
+                            <div class="score-label">Media Needed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Approach Summary -->
+            <div class="example-section">
+                <h2>Approach</h2>
+                <p>At this scale, the content strategy needs to be as robust as the product itself. Here's the approach behind the work above:</p>
+                <ul class="checklist">
+                    <li class="checked"><strong>Audit existing content</strong> — Inventory every article, assess accuracy, flag gaps and outdated material</li>
+                    <li class="checked"><strong>Define audience segments</strong> — Map user types to their specific support needs and content paths</li>
+                    <li class="checked"><strong>Design the taxonomy</strong> — Create a category architecture that's intuitive for users and scalable for the team</li>
+                    <li class="checked"><strong>Build the content matrix</strong> — Single source of truth pairing every article with its status, audience, and category</li>
+                    <li class="checked"><strong>Establish production workflows</strong> — Clear status definitions, ownership, and next steps for every stage of content</li>
+                    <li class="checked"><strong>Scale sustainably</strong> — Framework accommodates new categories and hundreds more articles without restructuring</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="example-cta">
+        <div class="container">
+            <h2>Need Help Structuring Your Help Center?</h2>
+            <p>I can build a content architecture that scales with your product and your team.</p>
+            <a href="../index.html#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Urs Consulting</span>
+                    <p>Help centers that scale. Content that works.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#services">Services</a>
+                    <a href="../index.html#work">Work</a>
+                    <a href="../index.html#about">About</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urs Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
