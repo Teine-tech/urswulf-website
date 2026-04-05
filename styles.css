@@ -303,6 +303,13 @@ a {
     line-height: 1.7;
 }
 
+.section-note {
+    font-size: 0.85rem;
+    color: var(--color-gray-500);
+    font-style: italic;
+    line-height: 1.6;
+}
+
 /* ========================================
    Services
    ======================================== */
@@ -458,8 +465,15 @@ a {
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--color-navy);
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     letter-spacing: -0.01em;
+}
+
+.project-meta {
+    font-size: 0.8rem;
+    color: var(--color-gray-500);
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .project-detail {
