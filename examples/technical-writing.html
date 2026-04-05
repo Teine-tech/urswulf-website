@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Writing — Urs Wulf</title>
+    <meta name="description" content="Example: An API endpoint reference and quick start guide for developers.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Urs Wulf</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="example-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / Technical Writing
+            </div>
+            <h1>API Reference &amp; Developer Guide</h1>
+            <p class="example-description">A structured API endpoint reference that developers can scan in seconds — with method, path, description, and authentication requirements for each endpoint.</p>
+            <div class="example-tags">
+                <span class="tag">API Docs</span>
+                <span class="tag">Developer Guides</span>
+                <span class="tag">Technical Writing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Content -->
+    <section class="example-body">
+        <div class="container">
+
+            <div class="example-section">
+                <div class="deliverable">
+                    <div class="deliverable-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>api-reference-users.md</span>
+                    </div>
+                    <div class="deliverable-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Endpoint</th>
+                                    <th>Description</th>
+                                    <th>Auth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="status status-published">GET</span></td>
+                                    <td><code>/v2/users</code></td>
+                                    <td>List all users in the workspace</td>
+                                    <td>Bearer token</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-published">GET</span></td>
+                                    <td><code>/v2/users/{id}</code></td>
+                                    <td>Get a single user by ID</td>
+                                    <td>Bearer token</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-in-progress">POST</span></td>
+                                    <td><code>/v2/users</code></td>
+                                    <td>Create a new user</td>
+                                    <td>Bearer token</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-review">PATCH</span></td>
+                                    <td><code>/v2/users/{id}</code></td>
+                                    <td>Update user properties</td>
+                                    <td>Bearer token</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="status status-outdated">DELETE</span></td>
+                                    <td><code>/v2/users/{id}</code></td>
+                                    <td>Delete a user (soft delete, recoverable for 30 days)</td>
+                                    <td>Bearer token + Admin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h2>Why This Works</h2>
+                <ul class="checklist">
+                    <li class="checked"><strong>Scannable in seconds</strong> — Developers find the endpoint, method, and auth requirement without reading paragraphs</li>
+                    <li class="checked"><strong>Consistent structure</strong> — Every endpoint documented the same way, so developers know exactly where to look</li>
+                    <li class="checked"><strong>Error-aware</strong> — Auth requirements and edge cases (soft delete, admin-only) are visible upfront, not buried</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="example-cta">
+        <div class="container">
+            <h2>Need Technical Documentation?</h2>
+            <p>I write API docs, developer guides, and technical references that developers actually use.</p>
+            <a href="../index.html#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Urs Wulf</span>
+                    <p>Knowledge Systems &amp; Help Center Consulting</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:urs@urswulf.com">urs@urswulf.com</a>
+                    <a href="https://www.linkedin.com/in/urswulf/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urs Wulf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

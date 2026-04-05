@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center Article Writing — Urs Wulf</title>
+    <meta name="description" content="Example: A structured, scannable help center article written for self-service and AI retrieval.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Urs Wulf</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#work">Work</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="example-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> / <a href="../index.html#work">Work</a> / Help Center Articles
+            </div>
+            <h1>Help Center Article</h1>
+            <p class="example-description">A clear, structured help article written for self-service — users can follow the steps without contacting support, and AI agents can retrieve accurate answers from each section.</p>
+            <div class="example-tags">
+                <span class="tag">Article Writing</span>
+                <span class="tag">Self-Service</span>
+                <span class="tag">AI-Ready</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Body Content -->
+    <section class="example-body">
+        <div class="container">
+
+            <div class="example-section">
+                <div class="mock-article">
+                    <span class="mock-article-badge">Help Center Article</span>
+                    <h3>How to Set Up Two-Factor Authentication (2FA)</h3>
+                    <p class="article-meta">Last updated: March 2026 · Audience: All Users</p>
+
+                    <p>Two-factor authentication adds an extra layer of security to your account. Once enabled, you'll enter a verification code from your phone each time you log in.</p>
+
+                    <h4>Before You Start</h4>
+                    <p>You'll need a mobile authenticator app installed on your phone. We support Google Authenticator, Authy, and Microsoft Authenticator. If you don't have one, download it from the App Store or Google Play before continuing.</p>
+
+                    <h4>Step 1: Open Security Settings</h4>
+                    <p>Go to <strong>Settings → Security → Two-Factor Authentication</strong> and click <strong>Enable 2FA</strong>.</p>
+
+                    <h4>Step 2: Scan the QR Code</h4>
+                    <p>Open your authenticator app, tap the <strong>+</strong> button, and scan the QR code shown on screen. Your app will generate a 6-digit verification code.</p>
+
+                    <h4>Step 3: Enter the Verification Code</h4>
+                    <p>Type the 6-digit code from your authenticator app into the confirmation field and click <strong>Verify</strong>. The code refreshes every 30 seconds — enter the current one.</p>
+
+                    <h4>Step 4: Save Your Recovery Codes</h4>
+                    <p>After verification, you'll see a set of one-time recovery codes. Save these somewhere safe — they're the only way to access your account if you lose your phone.</p>
+
+                    <div class="callout">
+                        <strong>Important:</strong> Recovery codes can only be viewed once. If you lose them, you'll need to contact support to regain access to your account.
+                    </div>
+
+                    <h4>What Happens Next</h4>
+                    <p>The next time you log in, you'll enter your password followed by the 6-digit code from your authenticator app. To disable 2FA later, return to <strong>Settings → Security</strong> and click <strong>Disable 2FA</strong>.</p>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h2>Why This Works</h2>
+                <ul class="checklist">
+                    <li class="checked"><strong>One topic per article</strong> — Covers a single task from start to finish</li>
+                    <li class="checked"><strong>Scannable structure</strong> — Numbered steps with bold UI references users can follow</li>
+                    <li class="checked"><strong>AI-ready</strong> — Each heading answers a distinct question, so AI agents retrieve precise answers</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="example-cta">
+        <div class="container">
+            <h2>Need Help Center Articles?</h2>
+            <p>I write clear, structured help content that reduces support tickets and works with AI agents out of the box.</p>
+            <a href="../index.html#contact" class="btn btn-primary">Start a Conversation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Urs Wulf</span>
+                    <p>Knowledge Systems &amp; Help Center Consulting</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:urs@urswulf.com">urs@urswulf.com</a>
+                    <a href="https://www.linkedin.com/in/urswulf/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Urs Wulf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
